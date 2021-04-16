@@ -32,7 +32,7 @@ inputs:
     description: Boolean telling the Batfish Enterprise server to initialize (or not) a new snapshot
     default: yes
   ssl_certificate:
-    required: yes
+    required: no
     description: base64 SSL certificate installed on Batfish Enterprise server. Run `base64 -i yourCA.pem`. Copy the output of into the Github secret `BFE_SSL_CERTIFICATE` of your repository
 
 outputs:
