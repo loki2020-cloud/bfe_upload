@@ -22,6 +22,11 @@ BF_HOST = os.environ.get("INPUT_SERVER_NAME")
 BF_PORT = os.environ.get("INPUT_SERVER_PORT")
 BF_SNAPSHOT_DIR = os.environ.get("INPUT_SNAPSHOT_FOLDER")
 
+print("*******NETWORK is {}**********".format(NETWORK))
+print("*******BF_HOST is {}**********".format(BF_HOST))
+print("*******BF_PORT is {}**********".format(BF_PORT))
+print("*******BF_SNAPSHOT_DIR is {}**********".format(BF_SNAPSHOT_DIR))
+
 BF_SNAPSHOT = os.environ.get("INPUT_SNAPSHOT_NAME")
 if len(BF_SNAPSHOT) == 0:
     BF_SNAPSHOT = os.environ.get("GITHUB_SHA", "error")
